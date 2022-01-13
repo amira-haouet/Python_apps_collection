@@ -7,10 +7,14 @@ from threading import *
 
 # Create Object
 root = Tk()
-
+#root1=F()
 # Set geometry
 root.geometry("400x200")
 
+
+
+    
+    
 # Use Threading
 def Threading():
 	t1=Thread(target=alarm)
@@ -34,8 +38,11 @@ def alarm():
 			print("Time to Wake up")
 			# Playing sound
 			winsound.PlaySound("sound.wav",winsound.SND_ASYNC)
-
-# Add Labels, Frame, Button, Optionmenus
+   
+def quit():
+       root.destroy()
+       
+# Add Labels, Frame, Button, Option menus
 Label(root,text="Alarm Clock",font=("Helvetica 20 bold"),fg="red").pack(pady=10)
 Label(root,text="Set Time",font=("Helvetica 15 bold")).pack()
 
@@ -80,7 +87,8 @@ second.set(seconds[0])
 secs = OptionMenu(frame, second, *seconds)
 secs.pack(side=LEFT)
 
-Button(root,text="Set Alarm",font=("Helvetica 15"),command=Threading).pack(pady=20)
+Button(root,text="Set Alarm",font=("Arial"), bg='green',command=Threading).pack(pady=20,padx=10)
+Button(root,text="Quit", command=quit,font=("Arial"), bg='red').pack(pady=20,padx=30)
 
 # Execute Tkinter
 root.mainloop()
