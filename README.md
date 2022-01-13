@@ -5,5 +5,5 @@ Begin with simple collections of Python
 # Get started with python  
 
     1. to install python 
-        > https://www.python.org/downloads/ 
+         https://www.python.org/downloads/ 
 
