@@ -12,6 +12,7 @@ im1 = None  # variable to store path of image
 
 
 def getJPG():
+    #choose libraby pillow image
     '''Function to get image location and open it with pillow'''
     global im1
     import_file_path = filedialog.askopenfilename()
@@ -26,7 +27,7 @@ canvas1.create_window(150, 130, window=browseButton_JPG)
 
 
 def convertToPNG():
-    '''Function to change file extenstion to png and save it to User's prefered location '''
+    '''Function to change file extenstion to png and save it to location that u choose'''
     global im1
     if im1 is None:
         tk.messagebox.showerror("Error", "No File selected")
@@ -36,5 +37,6 @@ def convertToPNG():
 
 
 saveAsButton_PNG = tk.Button(text='Convert JPEG to PNG', command=convertToPNG, bg=bg, fg=fg, font=font)      # Convert button
+#choose name and folder to save
 canvas1.create_window(150, 180, window=saveAsButton_PNG)
 root.mainloop()
