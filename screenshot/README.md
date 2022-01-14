@@ -5,7 +5,7 @@ captures screenshot at regular interval of time.
 ## Dependencies
 
 ```bash
-pip3 install pyautogui
+pip install pyautogui
 ```
 
 ## Usage
