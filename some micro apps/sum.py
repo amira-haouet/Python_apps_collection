@@ -19,3 +19,8 @@ sum = float(num1) + float(num2)
 
 # Display the sum
 print('The sum of {0} + {1} is {2}'.format(num1, num2, sum))
+
+
+# we can perform this addition in a single statement without using any variables as follows:
+
+print('The sum is %.1f' %(float(input('Enter first number: ')) + float(input('Enter second number: '))))
