@@ -3,11 +3,11 @@ we check if the number is positive or
 negative or zero and 
 display an appropriate message'''
 
-num = 3.4
+num = 3.7
 
 # Try these two variations as well:
 # num = 0
-# num = -4.5
+# num = -4.3
 
 if num > 0:
     print("Positive number")
