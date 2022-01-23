@@ -53,7 +53,3 @@ print((num2.real, num2.imag, num2.attr))
 # AttributeError: 'ComplexNumber' object has no attribute 'attr'
 print(num1.attr)
 
-
-print(" ")
-print("*********** Deleting Attributes and Objects **************")
-print(" ")
