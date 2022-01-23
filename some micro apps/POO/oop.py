@@ -31,3 +31,24 @@ print(" ")
 print(" ")
 print(" ******** Example 2 : Creating Methods in Python *******")
 print(" ")
+
+class Person:
+    
+    # instance attributes
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+    
+    # instance method
+    def meth1(self, song):
+        return "{} feel {}".format(self.name, song)
+
+    def meth2(self):
+        return "{} is now dancing".format(self.name)
+
+# instantiate the object
+amira = Person("Amira", 23)
+
+# call our instance methods
+print(amira.meth1(" Happy "))
+print(amira.meth2())
