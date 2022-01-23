@@ -16,4 +16,24 @@ while i <= n:
     i = i+1    # update counter
 
 # print the sum
+print("  ")
+
+print("************ Exemple 1  ****************")
+
+print("  ")
 print("The sum is", sum)
+print("  ")
+print("************ Exemple 2  ****************")
+print("  ")
+
+'''Example to illustrate
+the use of else statement
+with the while loop'''
+
+counter = 0
+
+while counter < 3:
+    print("Inside loop")
+    counter = counter + 1
+else:
+    print("Inside else")
