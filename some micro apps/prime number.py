@@ -1,9 +1,15 @@
 # Program to check if a number is prime or not
 
 #num = 30
-#or
-
+# or
+'''Example 1: Using a flag variable
+'''
 # To take input from the user
+
+print(" ")
+print(" Example 1: Using a flag variable")
+print(" ")
+
 num = int(input("Enter a number: "))
 
 # define a flag variable
@@ -24,3 +30,7 @@ if flag:
     print(num, "is not a prime number")
 else:
     print(num, "is a prime number")
+
+print(" ")
+print(" Using a for...else statement")
+print(" ")
